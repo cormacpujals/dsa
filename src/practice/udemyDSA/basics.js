@@ -49,5 +49,9 @@ class Student {
     this.scores.push(score)
     return this.scores 
   }
+  // challenge, implement add average score
+  calculateAverage() {
+    return this.scores.reduce((acc, cur) => (acc / this.scores.length) + cur, 0);
+  }
 }
 
