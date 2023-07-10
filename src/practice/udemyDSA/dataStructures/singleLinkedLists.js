@@ -16,11 +16,13 @@ class Node {
 // console.log(first.next.next);
 
 class SinglyLinkedList {
+
   constructor() {
     this.head = null;
     this.tail = null;
     this.length = 0;
   }
+
   push(val) {
     let newNode = new Node(val);
     if (!this.head) {
@@ -32,6 +34,10 @@ class SinglyLinkedList {
     }
     this.length++;
     return this;
+  }
+
+  pop() {
+    
   }
 }
 
